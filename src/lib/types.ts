@@ -1,3 +1,5 @@
+export type ThemeKey = "verde" | "azul" | "roxo" | "laranja" | "rosa";
+
 export interface Establishment {
   name: string;
   description: string;
@@ -5,7 +7,14 @@ export interface Establishment {
   whatsapp: string;
   isOpen: boolean;
   slug: string;
+
+  prepTimeMinutes?: number;
+
+  // ✅ novo
+  theme?: ThemeKey;
 }
+
+
 
 export interface Category {
   id: string;
@@ -13,7 +22,7 @@ export interface Category {
   order: number;
 }
 
-export interface Product {
+export type Product = {
   id: string;
   name: string;
   description: string;
@@ -21,7 +30,8 @@ export interface Product {
   image: string;
   categoryId: string;
   active: boolean;
-}
+  order?: number; // ✅ novo (opcional)
+};
 
 export interface CartItem {
   product: Product;
