@@ -63,14 +63,14 @@ export default function Menu() {
           type="text"
           value={customerName}
           onChange={(e) => setCustomerName(e.target.value)}
-          placeholder="Seu nome"
+          placeholder="Seu nome *"
           className="w-full rounded-xl border border-input bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-ring"
         />
         <input
-          type="text"
+          type="number"
           value={tableNumber}
           onChange={(e) => setTableNumber(e.target.value)}
-          placeholder="Número da mesa"
+          placeholder="Número da mesa *"
           className="w-full rounded-xl border border-input bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-ring"
         />
       </div>
