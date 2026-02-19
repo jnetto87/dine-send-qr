@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+# Dine Send QR 🍽️📱
 
-## Project info
+Cardápio digital com pedido via WhatsApp para consumo no local.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+O cliente acessa pelo link ou QR Code, monta o pedido no navegador e envia diretamente para o WhatsApp do estabelecimento. Simples, rápido e sem necessidade de aplicativo.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Funcionalidades
 
-**Use Lovable**
+- Cardápio digital por link ou QR Code
+- Seleção de produtos com cálculo automático
+- Envio do pedido formatado para o WhatsApp
+- Identificação do cliente e número da mesa
+- Filtro por categorias
+- Painel administrativo para:
+  - Cadastro de produtos
+  - Edição de preços
+  - Ativação/desativação de itens
+- Interface responsiva (mobile first)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Objetivo do projeto
 
-**Use your preferred IDE**
+Criar uma solução simples e acessível para restaurantes, lanchonetes e bares que desejam:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Reduzir atendimento manual
+- Evitar erros de pedido
+- Acelerar o fluxo no salão
+- Utilizar QR Code para autoatendimento
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tecnologias utilizadas
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
+- React + TypeScript
 - Vite
-- TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
+- shadcn/ui
+- Local Storage (persistência inicial)
+- Integração com WhatsApp (via link)
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 🚀 Como rodar o projeto
 
-## Can I connect a custom domain to my Lovable project?
+### 1. Clonar o repositório
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```bash
+git clone https://github.com/jnetto87/dine-send-qr.git
+cd dine-send-qr
